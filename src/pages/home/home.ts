@@ -1,22 +1,13 @@
-import { Component, ViewChild, ElementRef } from "@angular/core";
+import { BasePage } from "../base";
+
+import { Component } from "@angular/core";
 import { NavController } from "ionic-angular";
 import { PopoverController } from 'ionic-angular';
-import { Popover } from '../../components';
 
 @Component({
   selector: "page-home",
   templateUrl: "home.html"
 })
-export class HomePage {
-  @ViewChild('popoverContent', { read: ElementRef }) content: ElementRef;
-  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) { }
-  public presentPopover(ev) {
-    debugger;
-    let popover = this.popoverCtrl.create(Popover, {
-      contentEle: this.content.nativeElement,
-    });
-    popover.present({
-      ev: ev
-    });
-  }
+export class HomePage extends BasePage {
+  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) { super(navCtrl, popoverCtrl); }
 }

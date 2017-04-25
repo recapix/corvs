@@ -15,4 +15,9 @@ export class Popover {
   goPlace() {
     
   }
+
+  close() {
+    this.viewCtrl.dismiss();
+  }
+
 }
