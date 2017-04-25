@@ -7,9 +7,12 @@ import { StatusBar } from "@ionic-native/status-bar";
 import { AngularFireModule } from "angularfire2";
 
 import { MyApp } from "./app.component";
+// Pages
 import { ContatoPage, HomePage } from "../pages";
+// Pages
+import { Popover } from "../components";
+// Configurations
 import { FirebaseConfig } from "./app.configurations";
-
 //Services 
 import { LoggerService, StorageService } from "../services";
 
@@ -17,7 +20,8 @@ import { LoggerService, StorageService } from "../services";
   declarations: [
     MyApp,
     HomePage,
-    ContatoPage
+    ContatoPage,
+    Popover
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { LoggerService, StorageService } from "../services";
   entryComponents: [
     MyApp,
     HomePage,
-    ContatoPage
+    ContatoPage,
+    Popover
   ],
   providers: [
     StatusBar,
