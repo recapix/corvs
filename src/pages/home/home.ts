@@ -1,8 +1,7 @@
 import { BasePage } from "../base";
 
 import { Component } from "@angular/core";
-import { NavController } from "ionic-angular";
-import { PopoverController } from 'ionic-angular';
+import { NavController, PopoverController } from "ionic-angular"; 
 
 @Component({
   selector: "page-home",

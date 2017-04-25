@@ -8,19 +8,20 @@ import { AngularFireModule } from "angularfire2";
 
 import { MyApp } from "./app.component";
 // Pages
-import { ContatoPage, HomePage } from "../pages";
+import { ContatoPage, HomePage, LoginPage } from "../pages";
 // Pages
 import { Popover } from "../components";
 // Configurations
 import { FirebaseConfig } from "./app.configurations";
 //Services 
 import { LoggerService, StorageService } from "../services";
-
+debugger;
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ContatoPage,
+    LoginPage,
     Popover
   ],
   imports: [
@@ -37,6 +38,7 @@ import { LoggerService, StorageService } from "../services";
     MyApp,
     HomePage,
     ContatoPage,
+    LoginPage,
     Popover
   ],
   providers: [

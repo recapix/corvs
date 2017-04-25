@@ -1,11 +1,11 @@
+import { BasePage } from "../base";
 import { Component } from "@angular/core";
-import { NavController } from "ionic-angular";
+import { NavController, PopoverController } from "ionic-angular"; 
 
 @Component({
   selector: "page-contato",
   templateUrl: "contato.html"
 })
-export class ContatoPage {
-  constructor(public navCtrl: NavController) {
-  }
+export class ContatoPage extends BasePage { 
+  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) { super(navCtrl, popoverCtrl); }
 }

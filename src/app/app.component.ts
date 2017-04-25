@@ -16,11 +16,21 @@ export class MyApp {
   rootPage: any = HomePage;
   pages: Array<{ title: string, component: any }>;
 
-  constructor(private platform: Platform, private statusBar: StatusBar, private splashScreen: SplashScreen, private storage: Storage, private log: LoggerService) {
+  constructor(private platform: Platform,
+    private statusBar: StatusBar,
+    private splashScreen: SplashScreen,
+    private storage: Storage,
+    private log: LoggerService) {
     this.initializeApp();
-     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Contato', component: ContatoPage }
+    this.pages = [
+      {
+        title: 'Home',
+        component: HomePage
+      },
+      {
+        title: 'Contato',
+        component: ContatoPage
+      }
     ];
   }
   initializeApp() {
