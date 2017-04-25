@@ -8,7 +8,7 @@ import { AngularFireModule } from "angularfire2";
 
 import { MyApp } from "./app.component";
 // Pages
-import { ContatoPage, HomePage, LoginPage } from "../pages";
+import { ContatoPage, HomePage, LandingPage, LoginPage } from "../pages";
 // Pages
 import { Popover } from "../components";
 // Configurations
@@ -21,6 +21,7 @@ debugger;
     MyApp,
     HomePage,
     ContatoPage,
+    LandingPage,
     LoginPage,
     Popover
   ],
@@ -38,6 +39,7 @@ debugger;
     MyApp,
     HomePage,
     ContatoPage,
+    LandingPage,
     LoginPage,
     Popover
   ],

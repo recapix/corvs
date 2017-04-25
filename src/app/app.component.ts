@@ -4,7 +4,7 @@ import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
 import { Storage } from "@ionic/storage";
 // Pages
-import { ContatoPage, HomePage } from "../pages";
+import { ContatoPage, LandingPage, HomePage } from "../pages";
 // Services
 import { LoggerService } from "../services";
 
@@ -13,7 +13,7 @@ import { LoggerService } from "../services";
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage: any = HomePage;
+  rootPage: any = LandingPage;
   pages: Array<{ title: string, component: any }>;
 
   constructor(private platform: Platform,
