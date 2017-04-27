@@ -1,4 +1,4 @@
-<ion-menu [content]="content" drag-content="false"> 
+<ion-menu id="myMenu" [content]="content" drag-content="false"> 
   <ion-content>
     <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">

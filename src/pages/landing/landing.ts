@@ -1,11 +1,14 @@
 
 import { Component } from "@angular/core";
-import { NavController } from "ionic-angular";
+import { NavController, MenuController } from "ionic-angular";
 
 @Component({
     selector: "page-landing",
     templateUrl: "landing.html"
 })
 export class LandingPage {
-    constructor(private nav:NavController){}
+    constructor(nav: NavController, private menuCtrl: MenuController) {
+        debugger;
+        this.menuCtrl.enable(false, "myMenu");
+    }
 }
