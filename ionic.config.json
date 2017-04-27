@@ -2,5 +2,8 @@
   "name": "corvs",
   "app_id": "",
   "v2": true,
-  "typescript": true
+  "typescript": true,
+  "gulpStartupTasks": [
+     "images" 
+  ]
 }

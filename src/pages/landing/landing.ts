@@ -8,7 +8,6 @@ import { NavController, MenuController } from "ionic-angular";
 })
 export class LandingPage {
     constructor(nav: NavController, private menuCtrl: MenuController) {
-        debugger;
         this.menuCtrl.enable(false, "myMenu");
     }
 }
