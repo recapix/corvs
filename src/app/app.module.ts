@@ -8,7 +8,7 @@ import { AngularFireModule } from "angularfire2";
 
 import { MyApp } from "./app.component";
 // Pages
-import { ContatoPage, HomePage, LandingPage, LoginPage } from "../pages";
+import { ContatoPage, HomePage, LandingPage, LoginPage, SignupPage } from "../pages";
 // Pages
 import { Popover } from "../components";
 // Configurations
@@ -23,6 +23,7 @@ import { LoggerService, StorageService } from "../services";
     ContatoPage,
     LandingPage,
     LoginPage,
+    SignupPage,
     Popover
   ],
   imports: [
@@ -41,6 +42,7 @@ import { LoggerService, StorageService } from "../services";
     ContatoPage,
     LandingPage,
     LoginPage,
+    SignupPage,
     Popover
   ],
   providers: [

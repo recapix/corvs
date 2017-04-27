@@ -6,6 +6,22 @@ import { Popover } from '../components';
 export abstract class BasePage {
     @ViewChild('popoverContent', { read: ElementRef }) content: ElementRef;
     constructor(public navCtrl: NavController, public popoverCtrl: PopoverController, public menuCtrl: MenuController) {
+        this.menuCtrl.enable(true, "myMenu"); }
+    public presentPopover(ev) {
+        let popover = this.popoverCtrl.create(Popover, {
+            contentEle: this.content.nativeElement,
+        }, {
+                enableBackdropDismiss: true
+            });
+        popover.present({
+            ev: ev
+        });
+    }
+}
+
+export abstract class BasePageNoMenu {
+    @ViewChild('popoverContent', { read: ElementRef }) content: ElementRef;
+    constructor(public navCtrl: NavController, public popoverCtrl: PopoverController, public menuCtrl: MenuController) {
         this.menuCtrl.enable(false, "myMenu"); }
     public presentPopover(ev) {
         let popover = this.popoverCtrl.create(Popover, {

@@ -1,29 +1,25 @@
 <ion-content padding #landing>
-    <ion-slides pager>
-
+    <ion-slides pager> 
         <ion-slide>
             <h2>Slide 1</h2>
-        </ion-slide>
-
+            <h3>Mensagem Bonita 1</h3>
+        </ion-slide> 
         <ion-slide>
             <h2>Slide 2</h2>
-        </ion-slide>
-
+            <h3>Mensagem Bonita 2</h3>
+        </ion-slide> 
         <ion-slide>
             <img class="slide-image" src="assets/img/svg/logo.svg" />
-            <ion-grid>
+            <ion-grid block style="width:100%">
                 <ion-row>
-                     
+                    <h2 style="text-align:center !important" block style="width:100%">Almost done!</h2>
                 </ion-row>
                 <ion-row>
-                    Item
-                </ion-row>
-                <ion-row>
-                    Item
+                    <p small  style="text-align:center !important" block style="width:100%">Log in to your account.<br/> We are read to rock!</p>
                 </ion-row>
                 <ion-row padding>
-                    <ion-col width-50><button ion-button block style="width:100%">Entre</button></ion-col>
-                    <ion-col width-50><button ion-button block style="width:100%">Cadastre-se</button></ion-col>
+                    <ion-col width-50><button ion-button block style="width:100%" (click)="openLogIn()">Log in</button></ion-col>
+                    <ion-col width-50><button ion-button block style="width:100%" (click)="openSignUp()">Sign up</button></ion-col>
                 </ion-row>
             </ion-grid>
         </ion-slide>
