@@ -1,0 +1,85 @@
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-muted {
+  color: #777;
+}
+
+.text-primary {
+  color: #2196F3;
+}
+
+a.text-primary {
+  &:focus, &:hover {
+    color: #0c7cd5;
+  }
+}
+
+.text-success {
+  color: #67bd6a;
+}
+
+a.text-success {
+  &:focus, &:hover {
+    color: #49a84d;
+  }
+}
+
+.text-info {
+  color: #31708f;
+}
+
+a.text-info {
+  &:focus, &:hover {
+    color: #245269;
+  }
+}
+
+.text-warning {
+  color: #ffa829;
+}
+
+a.text-warning {
+  &:focus, &:hover {
+    color: #f59200;
+  }
+}
+
+.text-danger {
+  color: #f6675d;
+}
+
+a.text-danger {
+  &:focus, &:hover {
+    color: #f33a2c;
+  }
+}

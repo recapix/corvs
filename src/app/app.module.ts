@@ -15,7 +15,7 @@ import { Popover } from "../components";
 import { FirebaseConfig } from "./app.configurations";
 //Services 
 import { LoggerService, StorageService } from "../services";
-debugger;
+
 @NgModule({
   declarations: [
     MyApp,
