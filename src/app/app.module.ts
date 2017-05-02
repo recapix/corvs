@@ -6,15 +6,20 @@ import { IonicStorageModule } from "@ionic/storage";
 import { StatusBar } from "@ionic-native/status-bar";
 import { AngularFireModule } from "angularfire2";
 
+// App 
 import { MyApp } from "./app.component";
+
 // Pages
 import { ContatoPage, HomePage, LandingPage, LoginPage, SignupPage } from "../pages";
+
 // Pages
 import { Popover } from "../components";
+
 // Configurations
 import { FirebaseConfig } from "./app.configurations";
+
 //Services 
-import { LoggerService, StorageService } from "../services";
+import { AuthService, LoggerService, StorageService, UserService} from "../services";
 
 @NgModule({
   declarations: [
@@ -49,8 +54,10 @@ import { LoggerService, StorageService } from "../services";
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
+    AuthService,
     LoggerService,
-    StorageService
+    StorageService,
+    UserService
   ]
 })
 export class AppModule { }
